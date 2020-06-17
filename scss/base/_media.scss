@@ -1,0 +1,1130 @@
+// Media Queries //
+
+@media (min-width: 768px) {
+
+    main {
+        height: 4355px;
+        margin-bottom: 50px;
+    }
+
+    .mobile {
+        a {
+            width: 400px;
+        }
+    }
+    .logo-cont {
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        width: 1200px;
+        height: 70px;
+        padding: 20px 0px;
+        justify-content: space-around;
+        text-align: center;
+    }
+
+    .main-logo {
+        width: 78%;
+    }
+    
+    .search-bar {
+        visibility: visible;
+        line-height: 50px;
+        height: calc(100% - 19px);
+        min-width: 208px;
+        // padding: 3px 15px;
+        border-color: #ccc;
+        border-width: 1px;
+        margin-left: -105px;
+        margin-top: -65px;
+        &:focus {
+            outline-color: #4183d7;
+        }
+    }
+
+    #search-submit {
+        display: block;
+        margin-left: -1035px;
+        margin-top: -65px;
+        border-radius: 3px;
+        height: 79%;
+    }
+
+    .menu-box {
+        margin-left: 250px;
+    }
+
+    .main-nav {
+        display: none;
+    }
+    
+    // Banner //
+    
+    .wrapper {
+        width: 768px;
+        height: 848px;
+        background-size: cover;
+        margin-bottom: 20px;
+    }
+    
+    .banner-contents {
+        width: 768px;
+        top: 33%;
+        right: 0;
+        bottom: 70%;
+    }
+    
+    // Service Cards // //
+    
+    .row-1 {
+        width: 100%;
+        margin: 15px;
+    }
+    
+    .row-1-card {
+        width: 658px;
+        height: 312px;
+    }
+    
+    .row-2 {
+        width: 100%;
+    }
+    
+    .row-2-card {
+        width: 270px;
+        height: 312px;
+    }
+    
+    .block {
+        margin-bottom: 30px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    
+    .s-cards {
+        max-width: 100%;
+        display: block;
+        align-content: space-between;
+    }
+    
+    // // Company Info // //
+    
+    .company-info-cont {
+        width: 1920px;
+        height: 553px;
+        background-color: #333645;
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: left;
+        p {
+            font-size: 15px;
+        }
+    }
+    
+    .company-info {
+        padding: 25px 15px;
+    }
+    
+    // News Cards //
+    
+    .n-cards-cont {
+        position: relative;
+        width: 100%;
+        margin: 15px;
+        margin-top: 50px;
+    }
+
+    .n-cards {
+        height: 600px;
+    }
+    
+    .img-cont {
+        width: 340px;
+        height: 213px;
+        overflow: hidden;
+    }
+    
+    .covid-cont {
+        width: 340px;
+        height: 583px;
+        .cov-p {
+            margin-top: 19px;
+        }
+    }
+
+    .covid-overlay {
+        margin-left: 265px;
+    }
+    
+    .birthday-cont {
+        width: 340px;
+        height: 583px;
+    }
+    
+    .birthday-overlay {
+        margin-left: 265px;
+    }
+
+    .graduation-cont {
+        visibility: hidden;
+        width: 370px;
+        height: 583px;
+    }
+    
+    // // Commercial Sites // //
+
+    .commercial-sites-block {
+        visibility: visible;
+        display: flex;
+        width: 768px;
+        height: 170px;
+        background: lighten($color: #666, $amount: 50%);
+        margin: auto;
+        margin-bottom: 0;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .busseys-logo {
+        width: 121px;
+    }
+    .crane-logo {
+        width: 184px;
+    }
+    .beat-logo {
+        width: 46px;
+    }
+    .diver-logo {
+        width: 207px;
+    }
+
+    // // Footer // //
+    
+    footer {
+        display: flex;
+    }
+    
+    .foot-col-1,
+    .foot-col-2,
+    .foot-col-3,
+    .foot-social-media {
+        justify-content: space-around;
+        width: 270px;
+    }
+    
+    // Partnerships //
+    
+    .partners-cont {
+        display: block;
+        margin: auto;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0px 20px;
+        max-width: 1903px;
+        max-height: 188px;
+        padding: 50px 0;
+    }
+
+    .item-google {
+        width: 220px;
+        height: 82px;
+        padding: 0px 20px;
+    }
+    
+    .item {
+        padding: 0px 20px;
+    }
+
+    .silver {
+        width: 87.56px;
+        height: 53.3px;
+    }
+
+    .future{
+        width: 33.5px;
+        height: 53.28px;
+    }
+
+    .qms {
+        width: 45.69px;
+        height: 53.3px;
+    }
+
+    .carbon {
+        width: 133.25px;
+        height: 53.3px;
+    }
+}
+
+@media (min-width: 992px) {
+
+    main {
+        height: 3518px;
+        margin-bottom: 0;
+    }
+
+    .logo-cont {
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        width: 1200px;
+        height: 70px;
+        padding: 20px 0px;
+        justify-content: space-around;
+        text-align: center;
+    }
+
+    
+    
+    .search-bar {
+        display: none;
+        line-height: 50px;
+        height: calc(100% - 4px);
+        min-width: 208px;
+        // padding: 3px 15px;
+        border-color: #ccc;
+        border-width: 1px;
+        &:focus {
+            outline-color: #4183d7;
+        }
+    }
+
+    #search-submit {
+        display: block;
+        margin-left: 525px;
+        margin-top: -65px;
+        border-radius: 3px;
+        height: 62px;
+    }
+
+    .support-button {
+        display: block;
+        margin-left: 70px;
+    }
+
+    .contact-button {
+        display: block;
+    }
+
+    .menu-box {
+        margin-left: 75px;
+    }
+
+    .main-nav {
+        visibility: visible;
+        width: 992px;
+    }
+
+    .nav-li {
+        width: 154px;
+    }
+
+    .sub-nav-container ul {
+        width: 900px;
+        margin-top: 10px;
+    }
+
+    // Banner //
+    
+    .wrapper {
+        width: 992px;
+        height: 740px;
+        margin-bottom: 20px;
+    }
+    
+    .banner-contents {
+        width: 768px;
+        margin: 0 auto 0;
+        text-align: left;
+        h1,
+        p,
+        .wd-button {
+            margin-left: -180px;
+        }
+    }
+    
+    // Service Cards // //
+    
+    .row-1 {
+        width: 100%;
+        margin: 15px;
+    }
+    
+    .row-1-card {
+        width: 223.33px;
+        height: 356px;
+        .it-button {
+            margin-top: 25px;
+        }
+    }
+    
+    .row-2 {
+        width: 100%;
+    }
+    
+    .row-2-card {
+        width: 377px;
+        height: 290px;
+    }
+    
+    .block {
+        margin-bottom: 30px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    
+    .s-cards {
+        max-width: 100%;
+        display: block;
+        align-content: space-between;
+    }
+    
+    // // Company Info // //
+    
+    .company-info-cont {
+        width: 1920px;
+        height: 553px;
+        background-color: #333645;
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: left;
+    }
+    
+    .company-info {
+        padding: 25px 15px;
+    }
+    
+    // News Cards //
+    
+    .n-cards-cont {
+        position: relative;
+        width: 100%;
+        margin: 15px;
+        margin-left: 80px;
+        margin-top: 50px;
+    }
+    
+    .img-cont {
+        width: 370px;
+        height: 213px;
+        overflow: hidden;
+    }
+    
+    .covid-cont {
+        width: 370px;
+        height: 583px;
+    }
+
+    .covid-overlay {
+        margin-left: 295px;
+    }
+    
+    .birthday-cont {
+        width: 370px;
+        height: 583px;
+    }
+
+    .birthday-overlay {
+        margin-left: 296px;
+    }
+    
+    .graduation-cont {
+        width: 370px;
+        height: 583px;
+    }
+
+    // Commercial Sites //
+
+    .commercial-sites-block {
+        display: flex;
+        width: 992px;
+        height: 170px;
+        background: lighten($color: #666, $amount: 50%);
+        margin: auto;
+        margin-bottom: 0;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .commercial-clients {
+        justify-content: space-around;
+        padding: 50px 0;
+    }
+
+    .busseys-logo {
+        width: 168.75px;
+    }
+    .crane-logo {
+        width: 257.61px;
+    }
+    .beat-logo {
+        width: 64.63px;
+    }
+    .diver-logo {
+        width: 289.02px;
+    }
+
+    .com-tool::after {
+        padding: 1.5em;
+        margin-bottom: 76px;
+    }
+    
+    // // Footer // //
+    
+    footer {
+        display: flex;
+        width: 992px;
+    }
+    
+    .foot-col-1,
+    .foot-col-2,
+    .foot-col-3,
+    .foot-social-media {
+        justify-content: space-around;
+        width: 390px;
+    }
+    
+    // Partnerships //
+    
+    .partners-cont {
+    
+        margin: auto;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0px 20px;
+        max-width: 1903px;
+        max-height: 188px;
+        padding: 50px 0;
+    }
+
+    .item-google {
+        width: 220px;
+        height: 82px;
+        padding: 0px 20px;
+    }
+    
+    .item {
+        padding: 0px 20px;
+    }
+
+    .silver {
+        width: 140.2px;
+        height: 85.33px;
+    }
+
+    .future{
+        width: 69.2px;
+        height: 110.09px;
+    }
+
+    .qms {
+        width: 85.2px;
+        height: 99.39px;
+    }
+
+    .carbon {
+        width: 200.2px;
+        height: 80.08px;
+    }
+}
+
+@media (min-width: 1260px) {
+
+    main {
+        height: 3130px;
+    }
+
+    .mobile {
+        width: 100%;
+    }
+
+    .logo-cont {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        width: 1200px;
+        height: 70px;
+        padding: 20px 0px;
+        justify-content: space-around;
+        text-align: center;
+    }
+    
+    .search-bar {
+        position: absolute;
+        display: block;
+        top: 0px;
+        right: 0px;
+        line-height: 50px;
+        height: 50px;
+        top: 85px;
+        right: 161px;
+        line-height: 50px;
+        height: 59px;
+        min-width: 208px;
+        border-color: #ccc;
+        border-width: 1px;
+        &:focus {
+            outline-color: #4183d7;
+        }
+    }
+    #search-submit {
+        position: absolute;
+        top: 85px;
+        right: 80px;
+        height: 63px;
+    }
+    .support-button {
+       display: block;
+       margin-left: 100px;
+    }
+
+    .contact-button {
+        display: block;
+    }
+
+    .menu-box {
+        margin-left: 300px;
+    }
+
+    .main-nav {
+        visibility: visible;
+        width: 1260px;
+    }
+
+    .nav-li {
+        width: 192.672px;
+    }
+
+    .sub-nav-container ul {
+        width: 1150px;
+        margin-top: 10px;
+    }
+
+    // Banner //
+    
+    .wrapper {
+        background-size: cover;
+        width: 1920px;
+        height: 749px;
+        margin-bottom: 20px;
+    }
+    
+    .banner-contents {
+        width: 768px;
+        margin: 0 auto 0;
+        text-align: left;
+        h1,
+        p,
+        .wd-button {
+            margin-left: -450px;
+        }
+    }
+    
+    // Service Cards // //
+    
+    .row-1 {
+        width: 100%;
+        margin: 15px;
+        margin-left: 17px;
+    }
+    
+    .row-1-card {
+        width: 312px;
+        height: 312px;
+        font-size: 15px;
+    }
+    
+    .row-2 {
+        width: 100%;
+        margin: 0;
+        margin-left: 0;
+    }
+    
+    .row-2-card {
+        width: 211px;
+        height: 312px;
+        font-size: 13px;
+    }
+    
+    .block {
+        margin-bottom: 30px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    
+    .s-cards {
+        max-width: 100%;
+        display: block;
+        align-content: space-between;
+    }
+    
+    // // Company Info // //
+    
+    .company-info-cont {
+        width: 1920px;
+        height: 553px;
+        background-color: #333645;
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: left;
+    }
+    
+    .company-info {
+        padding: 25px 15px;
+        margin-left: 50px;
+    }
+    
+    // News Cards //
+
+    .news-head {
+        padding: 25px 15px;
+        background-color: #fff;
+        position: relative;
+        h2 {
+            margin-left: 50px;
+        }
+    }
+
+    .line-2 {
+        content: '';
+        display: block;
+        background-color: black;
+        color: black;
+        margin-left: 65px;
+        width: 80px;
+        height: 3px;
+    }
+    
+    .n-cards-cont {
+        position: relative;
+        width: 100%;
+        margin: 15px;
+        margin-left: 25px;
+        margin-top: 50px;
+    }
+    
+    .img-cont {
+        width: 370px;
+        height: 213px;
+        overflow: hidden;
+    }
+    
+    .covid-cont {
+        width: 370px;
+        height: 583px;
+        .cov-p{
+            margin-bottom: 35px;
+        }
+    }
+    
+    .birthday-cont {
+        width: 370px;
+        height: 583px;
+    }
+    
+    .graduation-cont {
+        width: 370px;
+        height: 583px;
+        visibility: visible;
+    }
+
+    .graduation-overlay {
+        margin-left: 295px;
+    }
+
+    .tool::after {
+        margin-left: -13.75em;
+    }
+
+    // // Commercial Sites // //
+
+    .commercial-sites-block {
+        visibility: visible;
+        display: flex;
+        width: 1260px;
+        height: 170px;
+    }
+
+    .commercial-clients {
+        justify-content: space-around;
+        padding: 50px 0;
+    }
+
+    .busseys-logo {
+        width: 168.75px;
+    }
+    .crane-logo {
+        width: 257.61px;
+    }
+    .beat-logo {
+        width: 64.63px;
+    }
+    .diver-logo {
+        width: 289.02px;
+    }
+
+    // // Footer // //
+    
+    footer {
+        display: flex;
+        width: 1260px;
+    }
+    
+    .foot-col-1,
+    .foot-col-2,
+    .foot-col-3,
+    .foot-social-media {
+        justify-content: space-around;
+        width: 270px;
+        padding-left: 0px;
+        flex-direction: row;
+    }
+    
+    // Partnerships //
+    
+    .partners-cont {
+        visibility: visible;
+        margin: auto;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0px 20px;
+        max-width: 1903px;
+        max-height: 188px;
+        padding: 50px 0;
+    }
+
+    .item-google {
+        width: 220px;
+        height: 82px;
+        padding: 0px 20px;
+    }
+    
+    .item {
+        padding: 0px 50px;
+    }
+
+    .silver {
+        width: 115px;
+        height: 70px;
+    }
+
+    .future{
+        width: 44px;
+        height: 70px;
+    }
+
+    .qms {
+        width: 60px;
+        height: 70px;
+    }
+
+    .carbon {
+        width: 175px;
+        height: 70px;
+    }
+}
+
+@media (min-width: 1920px) {
+    main {
+        height: 3130px;
+    }
+
+    .mobile {
+        width: 100%;
+    }
+
+    .logo-cont {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        width: 1200px;
+        height: 70px;
+        padding: 20px 0px;
+        justify-content: space-around;
+        text-align: center;
+    }
+    
+    .search-bar {
+        position: absolute;
+        display: block;
+        top: 0px;
+        right: 0px;
+        line-height: 50px;
+        height: 50px;
+        top: 85px;
+        right: 161px;
+        line-height: 50px;
+        height: 59px;
+        min-width: 208px;
+        border-color: #ccc;
+        border-width: 1px;
+        &:focus {
+            outline-color: #4183d7;
+        }
+    }
+    #search-submit {
+        position: absolute;
+        top: 85px;
+        right: 80px;
+        height: 63px;
+    }
+    .support-button {
+       display: block;
+       margin-left: 100px;
+    }
+
+    .contact-button {
+        display: block;
+    }
+
+    .menu-box {
+        margin-left: 300px;
+    }
+
+    .main-nav {
+        visibility: visible;
+        width: 1920px;
+    }
+
+    .nav-li {
+        width: 192.672px;
+    }
+
+    .sub-nav-container ul {
+        width: 1150px;
+        margin-top: 10px;
+    }
+
+    // Banner //
+    
+    .wrapper {
+        background-size: cover;
+        width: 1920px;
+        height: 759px;
+        margin-bottom: 20px;
+    }
+    
+    .banner-contents {
+        width: 768px;
+        margin: 0 auto 0;
+        text-align: left;
+        h1,
+        p,
+        .wd-button {
+            margin-left: -750px;
+        }
+    }
+    
+    // Service Cards // //
+    
+    .row-1 {
+        width: 100%;
+        margin: 15px;
+        margin-left: 350px;
+    }
+    
+    .row-1-card {
+        width: 312px;
+        height: 312px;
+        font-size: 15px;
+    }
+    
+    .row-2 {
+        width: 100%;
+        margin: 0;
+        margin-left: 0;
+    }
+    
+    .row-2-card {
+        width: 211px;
+        height: 312px;
+        font-size: 13px;
+    }
+    
+    .block {
+        margin-bottom: 30px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    
+    .s-cards {
+        max-width: 100%;
+        display: block;
+        align-content: space-between;
+    }
+    
+    // // Company Info // //
+    
+    .company-info-cont {
+        width: 1920px;
+        height: 553px;
+        background-color: #333645;
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: left;
+    }
+    
+    .company-info {
+        padding: 25px 15px;
+        margin-left: 350px;
+    }
+    
+    // News Cards //
+
+    .news-head {
+        padding: 25px 15px;
+        background-color: #fff;
+        position: relative;
+        h2 {
+            margin-left: 350px;
+        }
+    }
+
+    .line-2 {
+        content: '';
+        display: block;
+        background-color: black;
+        color: black;
+        margin-left: 365px;
+        width: 80px;
+        height: 3px;
+    }
+    
+    .n-cards-cont {
+        position: relative;
+        width: 100%;
+        margin: 15px;
+        margin-left: 350px;
+        margin-top: 50px;
+    }
+    
+    .img-cont {
+        width: 370px;
+        height: 213px;
+        overflow: hidden;
+    }
+    
+    .covid-cont {
+        width: 370px;
+        height: 583px;
+        .cov-p{
+            margin-bottom: 35px;
+        }
+    }
+    
+    .birthday-cont {
+        width: 370px;
+        height: 583px;
+    }
+    
+    .graduation-cont {
+        width: 370px;
+        height: 583px;
+        visibility: visible;
+    }
+
+    .graduation-overlay {
+        margin-left: 295px;
+    }
+
+    .tool::after {
+        margin-left: -13.75em;
+    }
+
+    // // Commercial Sites // //
+
+    .commercial-sites-block {
+        visibility: visible;
+        display: flex;
+        width: 1920px;
+        height: 170px;
+    }
+
+    .commercial-clients {
+        justify-content: space-around;
+        padding: 50px 0;
+    }
+
+    .busseys-logo {
+        width: 188px;
+    }
+    .crane-logo {
+        width: 287px;
+    }
+    .beat-logo {
+        width: 72px;
+    }
+    .diver-logo {
+        width: 322px;
+    }
+
+    // // Footer // //
+    
+    footer {
+        display: flex;
+        width: 1920px;
+    }
+    
+    .foot-col-1,
+    .foot-col-2,
+    .foot-col-3,
+    .foot-social-media {
+        justify-content: space-around;
+        width: 270px;
+        padding-left: 0px;
+        flex-direction: row;
+    }
+    
+    // Partnerships //
+    
+    .partners-cont {
+        visibility: visible;
+        margin: auto;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0px 20px;
+        max-width: 1903px;
+        max-height: 188px;
+        padding: 50px 0;
+    }
+
+    .item-google {
+        width: 220px;
+        height: 82px;
+        padding: 0px 20px;
+    }
+    
+    .item {
+        padding: 0px 50px;
+    }
+
+    .silver {
+        width: 115px;
+        height: 70px;
+    }
+
+    .future{
+        width: 44px;
+        height: 70px;
+    }
+
+    .qms {
+        width: 60px;
+        height: 70px;
+    }
+
+    .carbon {
+        width: 175px;
+        height: 70px;
+    }
+}
