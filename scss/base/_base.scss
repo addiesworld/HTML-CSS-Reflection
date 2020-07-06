@@ -18,35 +18,35 @@
 // Icon Colours //
 
 .fa-code {
-    color: #926fb1;
+    color: $purple;
 }
 
 .fa-desktop {
-    color: #4183d7;
+    color: $blue;
 }
 
 .fa-bars {
-    color: #fff;
+    color: $white;
 }
 
-#telecoms {
-    color: #d64541;
+.telecoms {
+    color: $orange-red;
 }
 
-#bespoke {
-    color: #67809f;
+.bespoke {
+    color: $blue-grey;
 }
 
-#marketing {
-    color: #2ecc71;
+.marketing {
+    color: $green;
 }
 
-#security {
-    color: #f62459;
+.security {
+    color: $red;
 }
 
 #training {
-    color: #926fb1;
+    color: $purple;
 }
 
 // Main Styling //
@@ -69,7 +69,7 @@ main {
 
 a {
     text-decoration: none;
-    color: white;
+    color: $white;
 }
 
 ul {
@@ -138,17 +138,19 @@ small {
 
 .support-button {
     display: none;
-    background-color: #4183d7;
+    background-color: $blue;
+    color: $white;
     &:hover {
-        background-color: #2a6ec6;
+        background-color: $hover-blue;
     }
 }
 
 .contact-button {
     display: none;
-    background-color: #999aa2;
+    background-color: $contact;
+    color: $white;
     &:hover {
-        background-color: #84858f;
+        background-color: $hover-contact;
     }
 }
 
@@ -158,16 +160,16 @@ small {
     min-width: 75%;
     margin-top: 20px;
     margin-left: -40px;
-    border-color: #ccc;
+    border-color: $border;
     border-width: 1px;
     &:focus {
-        outline-color: #4183d7;
+        outline-color: $blue;
     }
 }
 
 .menu-box {
-    background-color: black;
-    color: white;
+    background-color: $black;
+    color: $white;
     font-size: .75rem;
     min-width: 63px;
     min-height: 56px;
@@ -179,15 +181,14 @@ small {
 }
 
 .main-nav {
-    visibility: hidden;
+    display: none;
     box-sizing: border-box;
-    position: relative;
-    display: flex;
+    position: absolute;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     text-align: center;
-    background-color: #333645;
+    background-color: $main-color;
     width: 1920px;
     height: 99px;
 }
@@ -237,79 +238,79 @@ small {
 }
 
 .nav-web:hover {
-    background-color: #926fb1;
-    color: white;
+    background-color: $purple;
+    color: $white;
     .fa-code {
-        color:white;
+        color: $white;
     }
     .sub-nav-container {
         display: block;
-        background-color: #79539a;
-        color: white;
+        background-color: $sub-web-hover;
+        color: $white;
     }
 }
 
 .nav-it:hover {
-    background-color: #4183d7;
-    color: white;
+    background-color: $blue;
+    color: $white;
     .fa-desktop {
-        color:white;
+        color: $white;
     }
     .sub-nav-container {
         display: block;
-        background-color: #286abd;
-        color: white;
+        background-color: $sub-it-hover;
+        color: $white;
     }
 }
 
 .nav-telecoms:hover {
-    background-color: #d64541;
-    color: white;
-    #telecoms {
-        color:white;
+    background-color: $orange-red;
+    color: $white;
+    .telecoms {
+        color: $white;
     }
     .sub-nav-container {
         display: block;
-        background-color: #bc2c28;
-        color: white;
+        background-color: $sub-telecoms-hover;
+        color: $white;
     }
 }
 
 .nav-bespoke:hover {
-    background-color: #67809f;
-    color: white;
-    #bespoke {
-        color:white;
+    background-color: $blue-grey;
+    color: $white;
+    .bespoke {
+        color: $white;
     }
     .sub-nav-container {
         display: block;
-        background-color: #526781;
-        color: white;
+        background-color: $sub-bespoke-hover;
+        color: $white;
     }
 }
 .nav-market:hover {
-    background-color: #2ecc71;
-    color: white;
-    #marketing {
-        color:white;
+    background-color: $green;
+    color: $white;
+    .marketing {
+        color:$white;
     }
     .sub-nav-container {
         display: block;
-        background-color: #25a25a;
-        color: white;
+        background-color: $sub-market-hover;
+        color: $white;
     }
 }
 
 .nav-security:hover {
-    background-color: #f62459;
-    color: white;
-    #security {
-        color:white;
+    background-color: $red;
+    color: $white;
+    .security {
+        color: $white;
     }
     .sub-nav-container {
         display: block;
-        background-color: #de093f;
-        color: white;
+        background-color: $sub-security-hover;
+        color: $white;
     }
 }
 
@@ -334,7 +335,7 @@ small {
     height: 740px;
     margin-bottom: 20px;
     background-size: cover;
-    background: linear-gradient(to right, black, transparent),
+    background: linear-gradient(to right, $black, transparent),
                 url(https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-3wAI.jpg);
 }
 
@@ -342,7 +343,7 @@ small {
     width: 483px;
     justify-content: left;
     align-items: left;
-    color: #fff;
+    color: $white;
     position: absolute;
     text-align: center;
     top: 33%;
@@ -360,16 +361,17 @@ small {
 }
 
 .wd-button {
-    background-color: #926fb1;
+    background-color: $purple;
+    color: $white;
     &:hover {
-        background-color: #7e57a0;
+        background-color: $wd-button-hover;
     }
 }
 
 // Service Cards // //
 
 .row-1 {
-    width: 100%;
+    width: calc(100%-15px);
     margin: 15px;
     display: inline-flex;
     flex-wrap: wrap;
@@ -380,11 +382,11 @@ small {
     display: block;
     flex-wrap: wrap;
     flex-direction: row;
-    border: 1px solid #ccc;
+    border: 1px solid $border;
     border-radius: 3px;
     padding: 30px;
     box-shadow: 0 3px 35px rgba(0,0,0,.1);
-    width: 370px;
+    width: calc(100%-15px);
     height: 312px;
     letter-spacing: .4px;
     text-align: center;
@@ -395,42 +397,42 @@ small {
 .software-cont {
     h3,
     p {
-        color: black;
+        color: $black;
     }
     .s-button {
-        color: #fff;
+        color: $white;
     }
-    #bespoke {
+    .bespoke {
         height: 60px;
         width: 60px;
         line-height: 60px;
         margin: 0 auto 17px;
-        background-color: #67809f;
-        color: #fff;
+        background-color: $blue-grey;
+        color: $white;
         border-radius: 50%;
         justify-content: center;
     }
     &:hover {
-        background-color: #67809f;
-        color: #fff;
+        background-color: $blue-grey;
+        color: $white;
         h3,
         p {
-            color: #fff;
+            color: $white;
         }
-        #bespoke {
-            background-color: white;
-            color: #67809f;
+        .bespoke {
+            background-color: $white;
+            color: $blue-grey;
         }
         .line {
-            color: white;
-            background-color: white;
+            color: $white;
+            background-color: $white;
         }
         a {
-            color: #67809f;
+            color: $blue-grey;
         }
         .s-button {
-            color: #67809f;
-            background-color: white;
+            color: $blue-grey;
+            background-color: $white;
         }
     }
 }
@@ -438,41 +440,41 @@ small {
 .it-cont {
     h3,
     p {
-        color: black;
+        color: $black;
     }
     .it-button {
-        color: #fff;
+        color: $white;
     }
     .fa-desktop {
         height: 60px;
         width: 60px;
         line-height: 60px;
         margin: 0 auto 17px;
-        background-color: #4183d7;
-        color: #fff;
+        background-color: $blue;
+        color: $white;
         border-radius: 50%;
     }
     &:hover {
-        background-color: #4183d7;
-        color: #fff;
+        background-color: $blue;
+        color: $white;
         h3,
         p {
-            color: #fff;
+            color: $white;
         }
         .fa-desktop {
-            background-color: white;
-            color: #4183d7;
+            background-color: $white;
+            color: $blue;
         }
         .line {
-            color: white;
-            background-color: white;
+            color: $white;
+            background-color: $white;
         }
         a {
-            color: #4183d7;
+            color: $blue;
         }
         .it-button {
-            color: #4183d7;
-            background-color: white;
+            color: $blue;
+            background-color: $white;
         }
     }
 }
@@ -480,47 +482,47 @@ small {
 .marketing-cont {
     h3,
     p {
-        color: black;
+        color: $black;
     }
     .m-button {
-        color: #fff;
+        color: $white;
     }
-    #marketing {
+    .marketing {
         height: 60px;
         width: 60px;
         line-height: 60px;
         margin: 0 auto 17px;
-        background-color: #2ecc71;
-        color: #fff;
+        background-color: $green;
+        color: $white;
         border-radius: 50%;
     }
     &:hover {
-        background-color: #2ecc71;
-        color: #fff;
+        background-color: $green;
+        color: $white;
         h3,
         p {
-            color: #fff;
+            color: $white;
         }
-        #marketing {
-            background-color: white;
-            color: #2ecc71;
+        .marketing {
+            background-color: $white;
+            color: $green;
         }
         .line {
-            color: white;
-            background-color: white;
+            color: $white;
+            background-color: $white;
         }
         a {
-            color: #2ecc71;
+            color: $green;
         }
         .m-button {
-            color: #2ecc71;
-            background-color: white;
+            color: $green;
+            background-color: $white;
         }
     }
 }
 
 .row-2 {
-    width: 100%;
+    width: calc(100%-15px);
     justify-content: center;
     // margin: 15px;
     display: inline-flex;
@@ -532,11 +534,11 @@ small {
     display: block;
     flex-wrap: wrap;
     flex-direction: row;
-    border: 1px solid #ccc;
+    border: 1px solid $border;
     border-radius: 3px;
     padding: 30px;
     box-shadow: 0 3px 35px rgba(0,0,0,.1);
-    width: 370px;
+    width: calc(100%-15px);
     height: 312px;
     letter-spacing: .4px;
     text-align: center;
@@ -546,41 +548,41 @@ small {
 .telecoms-cont {
     h3,
     p {
-        color: black;
+        color: $black;
     }
     .t-button {
-        color: #fff;
+        color: $white;
     }
-    #telecoms {
+    .telecoms {
         height: 60px;
         width: 60px;
         line-height: 60px;
         margin: 0 auto 17px;
-        background-color: #d64541;
-        color: #fff;
+        background-color: $orange-red;
+        color: $white;
         border-radius: 50%;
     }
     &:hover {
-        background-color: #d64541;
-        color: #fff;
+        background-color: $orange-red;
+        color: $white;
         h3,
         p {
-            color: #fff;
+            color: $white;
         }
-        #telecoms {
-            background-color: white;
-            color: #d64541;
+        .telecoms {
+            background-color: $white;
+            color: $orange-red;
         }
         .line {
-            color: white;
-            background-color: white;
+            color: $white;
+            background-color: $white;
         }
         a {
-            color: #d64541;
+            color: $orange-red;
         }
         .t-button {
-            color: #d64541;
-            background-color: white;
+            color: $orange-red;
+            background-color: $white;
         }
     }
 }
@@ -588,41 +590,41 @@ small {
 .web-cont {
     h3,
     p {
-        color: black;
+        color: $black;
     }
     .w-button {
-        color: #fff;
+        color: $white;
     }
     .fa-code {
         height: 60px;
         width: 60px;
         line-height: 60px;
         margin: 0 auto 17px;
-        background-color: #926fb1;
-        color: #fff;
+        background-color: $purple;
+        color: $white;
         border-radius: 50%;
     }
     &:hover {
-        background-color: #926fb1;
-        color: #fff;
+        background-color: $purple;
+        color: $white;
         h3,
         p {
-            color: #fff;
+            color: $white;
         }
         .fa-code {
-            background-color: white;
-            color: #926fb1;
+            background-color: $white;
+            color: $purple;
         }
         .line {
-            color: white;
-            background-color: white;
+            color: $white;
+            background-color: $white;
         }
         a {
-            color: #926fb1;
+            color: $purple;
         }
         .w-button {
-            color: #926fb1;
-            background-color: white;
+            color: $purple;
+            background-color: $white;
         }
     }
 }
@@ -630,41 +632,41 @@ small {
 .security-cont {
     h3,
     p {
-        color: black;
+        color: $black;
     }
     .sec-button {
-        color: #fff;
+        color: $white;
     }
-    #security {
+    .security {
         height: 60px;
         width: 60px;
         line-height: 60px;
         margin: 0 auto 17px;
-        background-color: #f62459;
-        color: #fff;
+        background-color: $red;
+        color: $white;
         border-radius: 50%;
     }
     &:hover {
-        background-color: #f62459;
-        color: #fff;
+        background-color: $red;
+        color: $white;
         h3,
         p {
-            color: #fff;
+            color: $white;
         }
-        #security {
-            background-color: white;
-            color: #f62459;
+        .security {
+            background-color: $white;
+            color: $red;
         }
         .line {
-            color: white;
-            background-color: white;
+            color: $white;
+            background-color: $white;
         }
         a {
-            color: #f62459;
+            color: $red;
         }
         .sec-button {
-            color: #f62459;
-            background-color: white;
+            color: $red;
+            background-color: $white;
         }
     }
 }
@@ -672,41 +674,41 @@ small {
 .training-cont {
     h3,
     p {
-        color: black;
+        color: $black;
     }
     .tr-button {
-        color: #fff;
+        color: $white;
     }
     #training {
         height: 60px;
         width: 60px;
         line-height: 60px;
         margin: 0 auto 17px;
-        background-color: #926fb1;
-        color: #fff;
+        background-color: $purple;
+        color: $white;
         border-radius: 50%;
     }
     &:hover {
-        background-color: #926fb1;
-        color: #fff;
+        background-color: $purple;
+        color: $white;
         h3,
         p {
-            color: #fff;
+            color: $white;
         }
         #training {
-            background-color: white;
-            color: #926fb1
+            background-color: $white;
+            color: $purple;
         }
         .line {
-            color: white;
-            background-color: white;
+            color: $white;
+            background-color: $white;
         }
         a {
-            color: #926fb1;
+            color: $purple;
         }
         .tr-button {
-            color: #926fb1;
-            background-color: white;
+            color: $purple;
+            background-color: $white;
         }
     }
 }
@@ -720,51 +722,51 @@ small {
 .line {
     content: '';
     display: block;
-    background-color: black;
-    color: black;
+    background-color: $black;
+    color: $black;
     margin: auto;
     width: 28px;
     height: 3px;
 }
 
 .s-button {
-    background-color: #67809f;
+    background-color: $blue-grey;
     width: 128px;
     height: 47px;
 }
 
 .it-button {
-    background-color: #4183d7;
+    background-color: $blue;
     width: 128px;
     height: 47px;
 }
 
 .m-button {
-    background-color: #2ecc71;
+    background-color: $green;
     width: 128px;
     height: 47px;
 }
 
 .t-button {
-    background-color: #d64541;
+    background-color: $orange-red;
     width: 128px;
     height: 47px;
 }
 
 .w-button {
-    background-color: #926fb1;
+    background-color: $purple;
     width: 128px;
     height: 47px;
 }
 
 .sec-button {
-    background-color: #f62459;
+    background-color: $red;
     width: 128px;
     height: 47px;
 }
 
 .tr-button {
-    background-color: #926fb1;
+    background-color: $purple;
     width: 128px;
     height: 47px;
 }
@@ -780,8 +782,8 @@ small {
 .company-info-cont {
     width: 1920px;
     height: 553px;
-    background-color: #333645;
-    color: white;
+    background-color: $main-color;
+    color: $white;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -808,13 +810,13 @@ small {
     width: 175px;
     height: 35px;
     padding: 5px 15px;
-    background-color: white ;
+    background-color: $white;
     font-weight: lighter;
     a {
-        color: black;
+        color: $black;
     }
     &:hover {
-        background-color: darken($color: #fff, $amount: 5%)
+        background-color: darken($color: $white, $amount: 5%)
     }
 }
 
@@ -822,7 +824,7 @@ small {
 
 .news-head {
     padding: 25px 15px;
-    background-color: #fff;
+    background-color: $white;
     position: relative;
     // h2 {
     //     // margin-left: 250px;
@@ -832,8 +834,8 @@ small {
 .line-2 {
     content: '';
     display: block;
-    background-color: black;
-    color: black;
+    background-color: $black;
+    color: $black;
     margin-left: 12px;
     width: 80px;
     height: 3px;
@@ -842,15 +844,15 @@ small {
 .news-boxshadow {
     width: 1940px;
     height: 3px;
-    border-bottom: #ffffff;
+    border-bottom: $white;
     box-shadow: 0px 0px 50px 20px rgba(0, 0, 0, 0.1);
 }
 
 .line-3 {
     content: '';
     display: block;
-    color: #ccc;
-    background-color: #ccc;
+    color: $border;
+    background-color: $border;
     text-shadow: rgba(0,0,0,.1);
     margin: auto;
     width: 308px;
@@ -868,9 +870,8 @@ small {
 }
 
 .news-img {
-    width: 453px;
     height: 213px;
-    border-bottom: solid black 3px;
+    border-bottom: solid $black 3px;
     transition: all 0.3s ease-out;
     opacity: 1;
     &:hover {
@@ -911,17 +912,16 @@ small {
 .tool::before {
     border-style: solid;
     border-width: 1em .75em 0 .75em;
-    border-color:#333645 transparent transparent transparent;
+    border-color: $main-color transparent transparent transparent;
     bottom: 120%;
     margin-left: -.5em;
     content: '';
 }
 
 .tool::after {
-    background-color: #333645;
-    // border-radius: .25em;
+    background-color: $main-color;
     bottom: 180%;
-    color: #fff;
+    color: $white;
     width: 17.5em;
     padding: 1em;
     margin-left: -8.75em;
@@ -939,8 +939,8 @@ small {
     line-height: 23.008px;
     font-size: 12px;
     font-weight: bold;
-    background-color: #566c88;
-    color: white;
+    background-color: $covid;
+    color: $white;
     a:hover {
         text-decoration: underline;
     }
@@ -951,7 +951,7 @@ small {
     display: block;
     flex-wrap: wrap;
     flex-direction: row;
-    border: 1px solid #ccc;
+    border: 1px solid $border;
     border-radius: 3px;
     box-shadow: 0 3px 35px rgba(0,0,0,.1);
     width: 453px;
@@ -967,12 +967,12 @@ small {
         margin-top: 42px;
     }
     .header-link {
-        color: black;
+        color: $black;
         text-decoration: none;
         font-size: 16px;
         line-height: 24px;
         &:hover {
-            color: #566c88;
+            color: $covid;
             text-decoration: underline;
         }
     }
@@ -988,8 +988,8 @@ small {
     line-height: 23.008px;
     font-size: 12px;
     font-weight: bold;
-    background-color: #2a6ec6;
-    color: white;
+    background-color: $hover-blue;
+    color: $white;
     a:hover {
         text-decoration: underline;
     }
@@ -997,7 +997,7 @@ small {
 
 .birthday-cont {
     font-size: 16px;
-    border: 1px solid #ccc;
+    border: 1px solid $border;
     border-radius: 3px;
     box-shadow: 0 3px 35px rgba(0,0,0,.1);
     width: 453px;
@@ -1013,12 +1013,12 @@ small {
         margin-top: 42px;
         }
         .header-link {
-        color: black;
+        color: $black;
         text-decoration: none;
         font-size: 16px;
         line-height: 24px;
         &:hover {
-            color: #2a6ec6;
+            color: $hover-blue;
             text-decoration: underline;
         }
     }
@@ -1034,8 +1034,8 @@ small {
     line-height: 23.008px;
     font-size: 12px;
     font-weight: bold;
-    background-color: #7e57a0;
-    color: white;
+    background-color: $grad;
+    color: $white;
     a:hover {
         text-decoration: underline;
     }
@@ -1046,7 +1046,7 @@ small {
     display: block;
     flex-wrap: wrap;
     flex-direction: row;
-    border: 1px solid #ccc;
+    border: 1px solid $border;
     border-radius: 3px;
     box-shadow: 0 3px 35px rgba(0,0,0,.1);
     width: 453px;
@@ -1059,12 +1059,12 @@ small {
     margin-left: 0;
     overflow: hidden;
         .header-link {
-        color: black;
+        color: $black;
         text-decoration: none;
         font-size: 16px;
         line-height: 24px;
         &:hover {
-            color: #7e57a0;
+            color: $grad;
             text-decoration: underline;
         }
     }
@@ -1080,30 +1080,33 @@ small {
 .cov-button {
     margin-top: 30px;
     margin-left: -145px;
-    background-color: #67809f;
+    background-color: $blue-grey;
+    color: $white;
     height: auto;
     &:hover {
-        background-color: #566c88;
+        background-color: $covid;
     }
 }
 
 .bday-button {
     margin-top: 30px;
     margin-left: -145px;
-    background-color: #4183d7;
+    background-color: $blue;
+    color: $white;
     height: auto;
     &:hover {
-        background-color: #2a6ec6;
+        background-color: $hover-blue;
     }
 }
 
 .grad-button {
     margin-top: 6px;
     margin-left: -145px;
-    background-color: #926fb1;
+    background-color: $purple;
+    color: $white;
     height: auto;
     &:hover{
-        background-color: #7e57a0;
+        background-color: $grad;
     }
 }
 
@@ -1128,7 +1131,7 @@ small {
     display: flex;
     width: 1903px;
     height: 170px;
-    background: lighten($color: #666, $amount: 50%);
+    background: lighten($color: $commercial, $amount: 50%);
     margin: auto;
     margin-bottom: 0;
     flex-direction: row;
@@ -1161,7 +1164,7 @@ small {
 .com-tool::before {
     border-style: solid;
     border-width: 1em .75em 0 .75em;
-    border-color:#333645 transparent transparent transparent;
+    border-color: $main-color transparent transparent transparent;
     bottom: 120%;
     margin-left: -.5em;
     margin-bottom: 84px;
@@ -1169,10 +1172,10 @@ small {
 }
 
 .com-tool::after {
-    background-color: #333645;
+    background-color: $main-color;
     // border-radius: .25em;
     bottom: 180%;
-    color: #fff;
+    color: $white;
     width: 17.5em;
     padding: 1em;
     margin-left: -8.75em;
@@ -1209,7 +1212,8 @@ small {
 footer {
     display: flex;
     margin: auto;
-    background-color: #333645;
+    width: 100%;
+    background-color: $main-color;
     justify-content: space-around;
 }
 
@@ -1223,8 +1227,12 @@ footer {
     padding-top: 40px;
     padding-bottom: 40px;
     flex-direction: column;
-    color: #ffffff;
-    background-color: #333645;
+    color: $white;
+    background-color: $main-color;
+}
+
+.gap {
+    margin-bottom: 25px;
 }
 
 .facebook,
@@ -1236,7 +1244,7 @@ footer {
     background-color: rgba(0,0,0,.25);
     font-size: 1.75rem;
     line-height: 3.438rem;
-    color: #fff;
+    color: $white;
     text-align: center;
     text-decoration: none;
 }
@@ -1250,15 +1258,15 @@ footer {
 }
 
 .facebook:hover {
-    background-color: #3b5998;
+    background-color: $facebook;
 }
 
 .twitter:hover {
-    background-color: #00aced;
+    background-color: $twitter;
 }
 
 .linkedin:hover {
-    background-color: #0077b5;
+    background-color: $linkedin;
 }
 
 // Partnerships //
@@ -1312,11 +1320,11 @@ footer {
     letter-spacing: normal;
     border-style: none;
     border-radius: 0px 3px 3px 0px;
-    color: white;
-    background-color: #a6a6a6;
+    color: $white;
+    background-color: $s-submit;
     text-align: center;
     cursor: pointer;
     &:hover {
-        background-color: darken($color: #a6a6a6, $amount: 10%)
+        background-color: darken($color: $s-submit, $amount: 10%)
     }
 }

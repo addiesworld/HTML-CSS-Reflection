@@ -11,19 +11,19 @@
   color: #fff;
 }
 
-#telecoms {
+.telecoms {
   color: #d64541;
 }
 
-#bespoke {
+.bespoke {
   color: #67809f;
 }
 
-#marketing {
+.marketing {
   color: #2ecc71;
 }
 
-#security {
+.security {
   color: #f62459;
 }
 
@@ -49,7 +49,7 @@ main {
 
 a {
   text-decoration: none;
-  color: white;
+  color: #fff;
 }
 
 ul {
@@ -124,6 +124,7 @@ small {
 .support-button {
   display: none;
   background-color: #4183d7;
+  color: #fff;
 }
 
 .support-button:hover {
@@ -133,6 +134,7 @@ small {
 .contact-button {
   display: none;
   background-color: #999aa2;
+  color: #fff;
 }
 
 .contact-button:hover {
@@ -154,8 +156,8 @@ small {
 }
 
 .menu-box {
-  background-color: black;
-  color: white;
+  background-color: #000;
+  color: #fff;
   font-size: .75rem;
   min-width: 63px;
   min-height: 56px;
@@ -167,10 +169,9 @@ small {
 }
 
 .main-nav {
-  visibility: hidden;
+  display: none;
   box-sizing: border-box;
-  position: relative;
-  display: flex;
+  position: absolute;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
@@ -227,92 +228,92 @@ small {
 
 .nav-web:hover {
   background-color: #926fb1;
-  color: white;
+  color: #fff;
 }
 
 .nav-web:hover .fa-code {
-  color: white;
+  color: #fff;
 }
 
 .nav-web:hover .sub-nav-container {
   display: block;
   background-color: #79539a;
-  color: white;
+  color: #fff;
 }
 
 .nav-it:hover {
   background-color: #4183d7;
-  color: white;
+  color: #fff;
 }
 
 .nav-it:hover .fa-desktop {
-  color: white;
+  color: #fff;
 }
 
 .nav-it:hover .sub-nav-container {
   display: block;
   background-color: #286abd;
-  color: white;
+  color: #fff;
 }
 
 .nav-telecoms:hover {
   background-color: #d64541;
-  color: white;
+  color: #fff;
 }
 
-.nav-telecoms:hover #telecoms {
-  color: white;
+.nav-telecoms:hover .telecoms {
+  color: #fff;
 }
 
 .nav-telecoms:hover .sub-nav-container {
   display: block;
   background-color: #bc2c28;
-  color: white;
+  color: #fff;
 }
 
 .nav-bespoke:hover {
   background-color: #67809f;
-  color: white;
+  color: #fff;
 }
 
-.nav-bespoke:hover #bespoke {
-  color: white;
+.nav-bespoke:hover .bespoke {
+  color: #fff;
 }
 
 .nav-bespoke:hover .sub-nav-container {
   display: block;
   background-color: #526781;
-  color: white;
+  color: #fff;
 }
 
 .nav-market:hover {
   background-color: #2ecc71;
-  color: white;
+  color: #fff;
 }
 
-.nav-market:hover #marketing {
-  color: white;
+.nav-market:hover .marketing {
+  color: #fff;
 }
 
 .nav-market:hover .sub-nav-container {
   display: block;
   background-color: #25a25a;
-  color: white;
+  color: #fff;
 }
 
 .nav-security:hover {
   background-color: #f62459;
-  color: white;
+  color: #fff;
 }
 
-.nav-security:hover #security {
-  color: white;
+.nav-security:hover .security {
+  color: #fff;
 }
 
 .nav-security:hover .sub-nav-container {
   display: block;
   background-color: #de093f;
-  color: white;
+  color: #fff;
 }
 
 .sub-nav-web,
@@ -334,7 +335,7 @@ small {
   height: 740px;
   margin-bottom: 20px;
   background-size: cover;
-  background: linear-gradient(to right, black, transparent), url(https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-3wAI.jpg);
+  background: linear-gradient(to right, #000, transparent), url(https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-3wAI.jpg);
 }
 
 .banner-contents {
@@ -362,6 +363,7 @@ small {
 
 .wd-button {
   background-color: #926fb1;
+  color: #fff;
 }
 
 .wd-button:hover {
@@ -369,7 +371,7 @@ small {
 }
 
 .row-1 {
-  width: 100%;
+  width: calc(100%-15px);
   margin: 15px;
   display: inline-flex;
   flex-wrap: wrap;
@@ -384,7 +386,7 @@ small {
   border-radius: 3px;
   padding: 30px;
   box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
-  width: 370px;
+  width: calc(100%-15px);
   height: 312px;
   letter-spacing: .4px;
   text-align: center;
@@ -394,14 +396,14 @@ small {
 
 .software-cont h3,
 .software-cont p {
-  color: black;
+  color: #000;
 }
 
 .software-cont .s-button {
   color: #fff;
 }
 
-.software-cont #bespoke {
+.software-cont .bespoke {
   height: 60px;
   width: 60px;
   line-height: 60px;
@@ -422,14 +424,14 @@ small {
   color: #fff;
 }
 
-.software-cont:hover #bespoke {
-  background-color: white;
+.software-cont:hover .bespoke {
+  background-color: #fff;
   color: #67809f;
 }
 
 .software-cont:hover .line {
-  color: white;
-  background-color: white;
+  color: #fff;
+  background-color: #fff;
 }
 
 .software-cont:hover a {
@@ -438,12 +440,12 @@ small {
 
 .software-cont:hover .s-button {
   color: #67809f;
-  background-color: white;
+  background-color: #fff;
 }
 
 .it-cont h3,
 .it-cont p {
-  color: black;
+  color: #000;
 }
 
 .it-cont .it-button {
@@ -471,13 +473,13 @@ small {
 }
 
 .it-cont:hover .fa-desktop {
-  background-color: white;
+  background-color: #fff;
   color: #4183d7;
 }
 
 .it-cont:hover .line {
-  color: white;
-  background-color: white;
+  color: #fff;
+  background-color: #fff;
 }
 
 .it-cont:hover a {
@@ -486,19 +488,19 @@ small {
 
 .it-cont:hover .it-button {
   color: #4183d7;
-  background-color: white;
+  background-color: #fff;
 }
 
 .marketing-cont h3,
 .marketing-cont p {
-  color: black;
+  color: #000;
 }
 
 .marketing-cont .m-button {
   color: #fff;
 }
 
-.marketing-cont #marketing {
+.marketing-cont .marketing {
   height: 60px;
   width: 60px;
   line-height: 60px;
@@ -518,14 +520,14 @@ small {
   color: #fff;
 }
 
-.marketing-cont:hover #marketing {
-  background-color: white;
+.marketing-cont:hover .marketing {
+  background-color: #fff;
   color: #2ecc71;
 }
 
 .marketing-cont:hover .line {
-  color: white;
-  background-color: white;
+  color: #fff;
+  background-color: #fff;
 }
 
 .marketing-cont:hover a {
@@ -534,11 +536,11 @@ small {
 
 .marketing-cont:hover .m-button {
   color: #2ecc71;
-  background-color: white;
+  background-color: #fff;
 }
 
 .row-2 {
-  width: 100%;
+  width: calc(100%-15px);
   justify-content: center;
   display: inline-flex;
   flex-wrap: wrap;
@@ -553,7 +555,7 @@ small {
   border-radius: 3px;
   padding: 30px;
   box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
-  width: 370px;
+  width: calc(100%-15px);
   height: 312px;
   letter-spacing: .4px;
   text-align: center;
@@ -562,14 +564,14 @@ small {
 
 .telecoms-cont h3,
 .telecoms-cont p {
-  color: black;
+  color: #000;
 }
 
 .telecoms-cont .t-button {
   color: #fff;
 }
 
-.telecoms-cont #telecoms {
+.telecoms-cont .telecoms {
   height: 60px;
   width: 60px;
   line-height: 60px;
@@ -589,14 +591,14 @@ small {
   color: #fff;
 }
 
-.telecoms-cont:hover #telecoms {
-  background-color: white;
+.telecoms-cont:hover .telecoms {
+  background-color: #fff;
   color: #d64541;
 }
 
 .telecoms-cont:hover .line {
-  color: white;
-  background-color: white;
+  color: #fff;
+  background-color: #fff;
 }
 
 .telecoms-cont:hover a {
@@ -605,12 +607,12 @@ small {
 
 .telecoms-cont:hover .t-button {
   color: #d64541;
-  background-color: white;
+  background-color: #fff;
 }
 
 .web-cont h3,
 .web-cont p {
-  color: black;
+  color: #000;
 }
 
 .web-cont .w-button {
@@ -638,13 +640,13 @@ small {
 }
 
 .web-cont:hover .fa-code {
-  background-color: white;
+  background-color: #fff;
   color: #926fb1;
 }
 
 .web-cont:hover .line {
-  color: white;
-  background-color: white;
+  color: #fff;
+  background-color: #fff;
 }
 
 .web-cont:hover a {
@@ -653,19 +655,19 @@ small {
 
 .web-cont:hover .w-button {
   color: #926fb1;
-  background-color: white;
+  background-color: #fff;
 }
 
 .security-cont h3,
 .security-cont p {
-  color: black;
+  color: #000;
 }
 
 .security-cont .sec-button {
   color: #fff;
 }
 
-.security-cont #security {
+.security-cont .security {
   height: 60px;
   width: 60px;
   line-height: 60px;
@@ -685,14 +687,14 @@ small {
   color: #fff;
 }
 
-.security-cont:hover #security {
-  background-color: white;
+.security-cont:hover .security {
+  background-color: #fff;
   color: #f62459;
 }
 
 .security-cont:hover .line {
-  color: white;
-  background-color: white;
+  color: #fff;
+  background-color: #fff;
 }
 
 .security-cont:hover a {
@@ -701,12 +703,12 @@ small {
 
 .security-cont:hover .sec-button {
   color: #f62459;
-  background-color: white;
+  background-color: #fff;
 }
 
 .training-cont h3,
 .training-cont p {
-  color: black;
+  color: #000;
 }
 
 .training-cont .tr-button {
@@ -734,13 +736,13 @@ small {
 }
 
 .training-cont:hover #training {
-  background-color: white;
+  background-color: #fff;
   color: #926fb1;
 }
 
 .training-cont:hover .line {
-  color: white;
-  background-color: white;
+  color: #fff;
+  background-color: #fff;
 }
 
 .training-cont:hover a {
@@ -749,7 +751,7 @@ small {
 
 .training-cont:hover .tr-button {
   color: #926fb1;
-  background-color: white;
+  background-color: #fff;
 }
 
 .block {
@@ -761,8 +763,8 @@ small {
 .line {
   content: '';
   display: block;
-  background-color: black;
-  color: black;
+  background-color: #000;
+  color: #000;
   margin: auto;
   width: 28px;
   height: 3px;
@@ -820,7 +822,7 @@ small {
   width: 1920px;
   height: 553px;
   background-color: #333645;
-  color: white;
+  color: #fff;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -847,12 +849,12 @@ small {
   width: 175px;
   height: 35px;
   padding: 5px 15px;
-  background-color: white;
+  background-color: #fff;
   font-weight: lighter;
 }
 
 .culture a {
-  color: black;
+  color: #000;
 }
 
 .culture:hover {
@@ -868,8 +870,8 @@ small {
 .line-2 {
   content: '';
   display: block;
-  background-color: black;
-  color: black;
+  background-color: #000;
+  color: #000;
   margin-left: 12px;
   width: 80px;
   height: 3px;
@@ -878,7 +880,7 @@ small {
 .news-boxshadow {
   width: 1940px;
   height: 3px;
-  border-bottom: #ffffff;
+  border-bottom: #fff;
   box-shadow: 0px 0px 50px 20px rgba(0, 0, 0, 0.1);
 }
 
@@ -904,9 +906,8 @@ small {
 }
 
 .news-img {
-  width: 453px;
   height: 213px;
-  border-bottom: solid black 3px;
+  border-bottom: solid #000 3px;
   transition: all 0.3s ease-out;
   opacity: 1;
 }
@@ -974,7 +975,7 @@ small {
   font-size: 12px;
   font-weight: bold;
   background-color: #566c88;
-  color: white;
+  color: #fff;
 }
 
 .covid-overlay a:hover {
@@ -1005,7 +1006,7 @@ small {
 }
 
 .covid-cont .header-link {
-  color: black;
+  color: #000;
   text-decoration: none;
   font-size: 16px;
   line-height: 24px;
@@ -1027,7 +1028,7 @@ small {
   font-size: 12px;
   font-weight: bold;
   background-color: #2a6ec6;
-  color: white;
+  color: #fff;
 }
 
 .birthday-overlay a:hover {
@@ -1055,7 +1056,7 @@ small {
 }
 
 .birthday-cont .header-link {
-  color: black;
+  color: #000;
   text-decoration: none;
   font-size: 16px;
   line-height: 24px;
@@ -1077,7 +1078,7 @@ small {
   font-size: 12px;
   font-weight: bold;
   background-color: #7e57a0;
-  color: white;
+  color: #fff;
 }
 
 .graduation-overlay a:hover {
@@ -1104,7 +1105,7 @@ small {
 }
 
 .graduation-cont .header-link {
-  color: black;
+  color: #000;
   text-decoration: none;
   font-size: 16px;
   line-height: 24px;
@@ -1126,6 +1127,7 @@ small {
   margin-top: 30px;
   margin-left: -145px;
   background-color: #67809f;
+  color: #fff;
   height: auto;
 }
 
@@ -1137,6 +1139,7 @@ small {
   margin-top: 30px;
   margin-left: -145px;
   background-color: #4183d7;
+  color: #fff;
   height: auto;
 }
 
@@ -1148,6 +1151,7 @@ small {
   margin-top: 6px;
   margin-left: -145px;
   background-color: #926fb1;
+  color: #fff;
   height: auto;
 }
 
@@ -1255,6 +1259,7 @@ small {
 footer {
   display: flex;
   margin: auto;
+  width: 100%;
   background-color: #333645;
   justify-content: space-around;
 }
@@ -1269,8 +1274,12 @@ footer {
   padding-top: 40px;
   padding-bottom: 40px;
   flex-direction: column;
-  color: #ffffff;
+  color: #fff;
   background-color: #333645;
+}
+
+.gap {
+  margin-bottom: 25px;
 }
 
 .facebook,
@@ -1355,7 +1364,7 @@ footer {
   letter-spacing: normal;
   border-style: none;
   border-radius: 0px 3px 3px 0px;
-  color: white;
+  color: #fff;
   background-color: #a6a6a6;
   text-align: center;
   cursor: pointer;
@@ -1413,7 +1422,7 @@ footer {
     display: none;
   }
   .wrapper {
-    width: 768px;
+    width: 100%;
     height: 848px;
     background-size: cover;
     margin-bottom: 20px;
@@ -1426,7 +1435,9 @@ footer {
   }
   .row-1 {
     width: 100%;
-    margin: 15px;
+    margin: 0 auto;
+    margin-top: 15px;
+    justify-content: center;
   }
   .row-1-card {
     width: 658px;
@@ -1434,6 +1445,8 @@ footer {
   }
   .row-2 {
     width: 100%;
+    margin: 0 auto;
+    justify-content: center;
   }
   .row-2-card {
     width: 270px;
@@ -1501,10 +1514,16 @@ footer {
     width: 370px;
     height: 583px;
   }
+  .com-tool::before {
+    margin-bottom: 57px;
+  }
+  .com-tool::after {
+    margin-bottom: 59px;
+  }
   .commercial-sites-block {
     visibility: visible;
     display: flex;
-    width: 768px;
+    width: 100%;
     height: 170px;
     background: #e6e6e6;
     margin: auto;
@@ -1614,8 +1633,9 @@ footer {
     margin-left: 75px;
   }
   .main-nav {
-    visibility: visible;
-    width: 992px;
+    display: flex;
+    position: relative;
+    width: 100%;
   }
   .nav-li {
     width: 154px;
@@ -1625,7 +1645,7 @@ footer {
     margin-top: 10px;
   }
   .wrapper {
-    width: 992px;
+    width: 100%;
     height: 740px;
     margin-bottom: 20px;
   }
@@ -1641,7 +1661,9 @@ footer {
   }
   .row-1 {
     width: 100%;
-    margin: 15px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
   }
   .row-1-card {
     width: 223.33px;
@@ -1666,6 +1688,13 @@ footer {
     max-width: 100%;
     display: block;
     align-content: space-between;
+    font-size: 15px;
+  }
+  .s-button {
+    margin-top: 25px;
+  }
+  .m-button {
+    margin-top: 2px;
   }
   .company-info-cont {
     width: 1920px;
@@ -1712,7 +1741,7 @@ footer {
   }
   .commercial-sites-block {
     display: flex;
-    width: 992px;
+    width: 100%;
     height: 170px;
     background: #e6e6e6;
     margin: auto;
@@ -1736,13 +1765,15 @@ footer {
   .diver-logo {
     width: 289.02px;
   }
+  .com-tool::before {
+    margin-bottom: 75px;
+  }
   .com-tool::after {
     padding: 1.5em;
-    margin-bottom: 76px;
+    margin-bottom: 77px;
   }
   footer {
     display: flex;
-    width: 992px;
   }
   .foot-col-1,
   .foot-col-2,
@@ -1839,8 +1870,9 @@ footer {
     margin-left: 300px;
   }
   .main-nav {
-    visibility: visible;
-    width: 1260px;
+    display: flex;
+    position: relative;
+    width: 100%;
   }
   .nav-li {
     width: 192.672px;
@@ -1851,7 +1883,7 @@ footer {
   }
   .wrapper {
     background-size: cover;
-    width: 1920px;
+    width: 100%;
     height: 749px;
     margin-bottom: 20px;
   }
@@ -1869,6 +1901,7 @@ footer {
     width: 100%;
     margin: 15px;
     margin-left: 17px;
+    justify-content: center;
   }
   .row-1-card {
     width: 312px;
@@ -1894,6 +1927,9 @@ footer {
     max-width: 100%;
     display: block;
     align-content: space-between;
+  }
+  .s-button {
+    margin-top: 2px;
   }
   .company-info-cont {
     width: 1920px;
@@ -1957,13 +1993,10 @@ footer {
   .graduation-overlay {
     margin-left: 295px;
   }
-  .tool::after {
-    margin-left: -13.75em;
-  }
   .commercial-sites-block {
     visibility: visible;
     display: flex;
-    width: 1260px;
+    width: 100%;
     height: 170px;
   }
   .commercial-clients {
@@ -1982,9 +2015,14 @@ footer {
   .diver-logo {
     width: 289.02px;
   }
+  .com-tool::before {
+    margin-bottom: 75px;
+  }
+  .com-tool::after {
+    margin-bottom: 77px;
+  }
   footer {
     display: flex;
-    width: 1260px;
   }
   .foot-col-1,
   .foot-col-2,
@@ -2084,8 +2122,9 @@ footer {
     margin-left: 300px;
   }
   .main-nav {
-    visibility: visible;
-    width: 1920px;
+    display: flex;
+    position: relative;
+    width: 100%;
   }
   .nav-li {
     width: 192.672px;
@@ -2096,7 +2135,7 @@ footer {
   }
   .wrapper {
     background-size: cover;
-    width: 1920px;
+    width: 100%;
     height: 759px;
     margin-bottom: 20px;
   }
@@ -2113,7 +2152,8 @@ footer {
   .row-1 {
     width: 100%;
     margin: 15px;
-    margin-left: 350px;
+    margin-left: 0px;
+    justify-content: center;
   }
   .row-1-card {
     width: 312px;
@@ -2202,13 +2242,16 @@ footer {
   .graduation-overlay {
     margin-left: 295px;
   }
-  .tool::after {
-    margin-left: -13.75em;
+  .com-tool::before {
+    margin-bottom: 82px;
+  }
+  .com-tool::after {
+    margin-bottom: 84px;
   }
   .commercial-sites-block {
     visibility: visible;
     display: flex;
-    width: 1920px;
+    width: 100%;
     height: 170px;
   }
   .commercial-clients {
@@ -2229,7 +2272,6 @@ footer {
   }
   footer {
     display: flex;
-    width: 1920px;
   }
   .foot-col-1,
   .foot-col-2,
@@ -2273,5 +2315,32 @@ footer {
   .carbon {
     width: 175px;
     height: 70px;
+  }
+}
+
+@media (min-width: 768px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .menu-box {
+    margin-left: 260px;
+  }
+}
+
+@media (min-width: 992px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .menu-box {
+    margin-left: 310px;
+  }
+  .support-button {
+    margin-left: 150px;
+  }
+}
+
+@media (min-width: 1260px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .menu-box {
+    margin-left: 675px;
+  }
+  .search-bar {
+    right: 210px;
+  }
+  #search-submit {
+    right: 129px;
   }
 }
